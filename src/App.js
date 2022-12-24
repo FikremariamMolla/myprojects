@@ -13,7 +13,9 @@ export default function App() {
  
   //decrease counter
   const decrease = () => {
-    setCounter(count => count - 1);
+    if (counter > 0) {
+      setCounter(count => count - 1);
+    };
   };
  
   //reset counter 
